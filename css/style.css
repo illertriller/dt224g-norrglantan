@@ -93,3 +93,144 @@ nav a {
 .intro h2 {
   margin-top: 0;
 }
+
+/* Aktiviteter */
+.activities {
+  padding: 1rem;
+  background: #e8e8e8;
+}
+
+.activities h2 {
+  margin-top: 0;
+}
+
+.card {
+  background: #fff;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.card img {
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+
+.card h3 {
+  margin: 0 0 0.5rem;
+  padding: 0 0.75rem;
+}
+
+.card p {
+  margin: 0;
+  padding: 0 0.75rem;
+}
+
+.planera {
+  padding: 1.5rem 1rem;
+}
+
+.planera h2 {
+  margin-top: 0;
+}
+
+/* Footer */
+footer {
+  padding: 1.5rem 1rem;
+  background: #5c5348;
+  color: #fff;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.footer-brand img {
+  width: 64px;
+  margin-bottom: 0.5rem;
+}
+
+.footer-kontakt,
+.footer-links {
+  margin-top: 1.5rem;
+}
+
+.footer-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+/* Desktop versionen */
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+
+  header > a {
+    margin-bottom: 0;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .hero {
+    padding: 2rem;
+  }
+
+  .hero img {
+    max-height: 420px;
+    object-fit: cover;
+  }
+
+  .intro {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .activities {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+
+  .activities h2 {
+    grid-column: 1 / -1;
+  }
+
+  .card {
+    margin-bottom: 0;
+  }
+
+  .planera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .planera p {
+    max-width: 28rem;
+    margin: 0;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .footer-kontakt,
+  .footer-links {
+    margin-top: 0;
+  }
+}
