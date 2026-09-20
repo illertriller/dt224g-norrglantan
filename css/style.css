@@ -36,6 +36,8 @@ ul {
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 header {
@@ -68,21 +70,29 @@ nav a {
 /* hero mobil */
 
 .hero {
-    padding: 1rem;
+    padding: 0;
 }
 
 .hero img {
-    width: 100%;
+    width: 100%;    
     margin-bottom: 1rem;
 }
 
-.hero h1 {
+.hero-content {
+    padding: 0 1rem 1rem;
+}
+
+.hero-content h1 {
     margin: 0 0 0.75rem;
     font-size: 1.75rem;
 }
 
-.hero p {
+.hero-content p {
     margin: 0 0 1rem;
+}
+
+.hero-content .button {
+    margin-bottom: 1rem;
 }
 
 /* Intro */
@@ -179,12 +189,31 @@ footer a {
   }
 
   .hero {
-    padding: 2rem;
+    position: relative;
+    padding: 0;
+    max-width: 100%;
   }
 
   .hero img {
-    max-height: 420px;
+    max-width: 100%;
+    max-height: 840px;
     object-fit: cover;
+    margin-bottom: 0;
+  }
+
+  .hero-content {
+    position: absolute;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-5%);
+    max-width: 28rem;
+    padding: 1.5rem;
+    color: #fff
+  }
+
+  .hero-content h1,
+  .hero-content p {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
   }
 
   .intro {
